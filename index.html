@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form class="form" id="add-user">
+        <h1>To-do List</h1>
+
+        <input placeholder="Write a newly To-do" type="text" id="taskText">
+        <button onclick="addTask()">ADD</button>
+        
+        <br><br>
+        
+        <ul id="taskList">
+            <li>
+                <input type="checkbox" id="task1" name="task1" value="Task1">
+                <label for="task1">Task1</label>
+                <button onclick="deleteTask(this)">DELETE</button>
+                <button onclick="editTask(this)">EDIT</button>
+            </li>
+            <li>
+                <input type="checkbox" id="task2" name="task2" value="Task2">
+                <label for="task2">Task2</label>
+                <button onclick="deleteTask(this)">DELETE</button>
+                <button onclick="editTask(this)">EDIT</button>
+            </li>
+            <li>
+                <input type="checkbox" id="task3" name="task3" value="Task3">
+                <label for="task3">Task3</label>
+                <button onclick="deleteTask(this)">DELETE</button>
+                <button onclick="editTask(this)">EDIT</button>
+            </li>
+            <li>
+                <input type="checkbox" id="task4" name="task4" value="Task4">
+                <label for="task4">Task4</label>
+                <button onclick="deleteTask(this)">DELETE</button>
+                <button onclick="editTask(this)">EDIT</button>
+            </li>
+        </ul>
+
+        <!-- <button onclick="deleteCompletedTasks()">Delete Completed Tasks</button> -->
+    </form>
+
+    
+    <script src="index.js"></script>
+    
+</body>
+</html>
